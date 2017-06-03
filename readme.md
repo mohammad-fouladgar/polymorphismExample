@@ -1,3 +1,10 @@
+## Features
+
+- Use git for version control.
+- Use Lumen micro-framework by Laravel.
+- Use of the repository pattern for resolve the concept of polymorphism.
+- use php unitTest for ApiController.
+
 ## Quick Start
 
 - Clone this repo or download it's release archive and extract it somewhere
@@ -28,3 +35,12 @@ php -S localhost:8000 -t public/
 
 ```
 
+## Run unit Tests
+ Run the followin command in CLI :
+```
+~/workspace/polymorphismExample $ vendor/bin/phpunit
+```
+ OR 
+ ```
+~/workspace/polymorphismExample $ phpunit
+```
