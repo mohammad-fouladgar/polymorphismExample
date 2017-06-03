@@ -19,17 +19,30 @@ $app->group(['prefix' => 'api/v1/'], function($app) {
 	
 	$app->group(['prefix'=>'pizza'],function($app){
 		
-		$app->get('order/{type}','PizzaStoreController@orderPizza');
+		$app->get('order/{type}',[
+			'as'   =>'api.pizza.order',
+			'uses' =>'PizzaStoreController@orderPizza'
+		]);
 	});
 
 	$app->group(['prefix'=>'duck'],function($app){
 		
-		$app->get('fly','DuckController@fly');
-		$app->get('quack','DuckController@quack');
+		$app->get('fly',[
+			'as'   =>'api.duck.fly',
+			'uses' =>'DuckController@fly'
+		]);
+
+		$app->get('quack',[
+			'as'   =>'api.duck.quack',
+			'uses' =>'DuckController@quack'
+		]);
 	});
 
 	$app->group(['prefix'=>'statistics'],function($app){
 		
-		$app->get('print/{candidate}/{count}','StatisticsController@printGuessStatistics');
+		$app->get('print/{candidate}/{count}',[
+			'as'   =>'api.statistics.print',
+			'uses' =>'StatisticsController@printGuessStatistics'
+		]);
 	});
 });

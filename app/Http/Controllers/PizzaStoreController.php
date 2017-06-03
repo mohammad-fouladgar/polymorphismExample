@@ -21,7 +21,7 @@ class PizzaStoreController extends Controller
 
         $pizza = $this->getPizza($type);
       } catch (\Exception $e) {
-        return response()->json(['message'=>$e->getMessage()]);
+        return response()->json(['message'=>$e->getMessage()],404);
       }
    		
    		$pizza = $pizza->prepare()
@@ -29,7 +29,7 @@ class PizzaStoreController extends Controller
                      ->cut()
                      ->box();
 
-   	 return response()->json($pizza);
+   	 return response()->json(['message'=>$pizza]);
    }
 
    /**
