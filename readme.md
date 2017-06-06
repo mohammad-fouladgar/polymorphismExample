@@ -3,7 +3,7 @@
 - Use git for version control.
 - Use Lumen micro-framework by Laravel.
 - Use of the repository pattern for resolve the concept of polymorphism.
-- Use php unitTest for ApiController.
+- Use php unitTest for ApiControllers.
 
 ## Quick Start
 
