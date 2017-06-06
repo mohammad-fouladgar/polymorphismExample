@@ -3,7 +3,7 @@
 - Use git for version control.
 - Use Lumen micro-framework by Laravel.
 - Use of the repository pattern for resolve the concept of polymorphism.
-- use php unitTest for ApiController.
+- Use php unitTest for ApiController.
 
 ## Quick Start
 
@@ -36,7 +36,7 @@ php -S localhost:8000 -t public/
 ```
 
 ## Run unit Tests
- Run the followin command in CLI :
+ Run the following command in CLI :
 ```
 ~/workspace/polymorphismExample $ vendor/bin/phpunit
 ```
